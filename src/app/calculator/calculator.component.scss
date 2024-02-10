@@ -1,0 +1,76 @@
+.main {
+	margin: 50px auto;
+	width: 150px;
+	height: 250px;
+	border: 1px solid #e360e5;
+	border-radius: 20px;
+	background: #e360e5;
+	color: azure;
+	font-family: 'Courier New', Courier, monospace;
+	padding: 18px;
+	box-shadow: 4px 4px 4px #7f5e7f;
+}
+
+.screen {
+	height: 40px;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px auto;
+	background: #201e20;
+	display: grid;
+	justify-content: end;
+}
+
+.screen p {
+	text-align: right;
+	font-size: 2rem;
+	margin-top: 10px;
+}
+
+.buttons {
+	display: grid;
+	grid-template-areas:
+		"as plus-minus percent delenie"
+		"seven eight nine umnojenie "
+		"fore five six minus"
+		"one two three plus"
+		"zero zero dot ravno";
+	grid-gap: 7px;
+	justify-items: center;
+}
+
+.btn {
+	color: black;
+	width: 30px;
+	height: 30px;
+	background: #fda0ff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 31px;
+	cursor: pointer;
+	user-select: none;
+
+}
+
+.btn.zero {
+	grid-area: zero;
+	width: 100%;
+	border-radius: 34px;
+}
+
+.btn:hover {
+	filter: brightness(110%);
+}
+
+.btn:active {
+	filter: brightness(90%)
+}
+
+.btn.bg-white {
+	background: #f4d6f4;
+}
+
+.btn.bg-black {
+	background: #d20fd6;
+	color: white;
+}

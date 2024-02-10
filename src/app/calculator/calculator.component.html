@@ -1,0 +1,30 @@
+<div class="main">
+	<div class="screen">
+		<p> {{ outValue }} </p>
+	</div>
+	<div class="buttons" (click)="clickButtons($event)">
+		<div class="btn bg-white ac" (click)="clearAll()">ac</div>
+		<div class="btn bg-white plus-minus">+/-</div>
+		<div class="btn bg-white percent">%</div>
+		<div class="btn bg-white delenie">/</div>
+
+		<div class="btn seven">7</div>
+		<div class="btn eight">8</div>
+		<div class="btn nine">9</div>
+		<div class="btn bg-black umnojenie">X</div>
+
+		<div class="btn four">4</div>
+		<div class="btn five">5</div>
+		<div class="btn six">6</div>
+		<div class="btn bg-black minus">-</div>
+
+		<div class="btn one">1</div>
+		<div class="btn two">2</div>
+		<div class="btn three">3</div>
+		<div class="btn bg-black plus">+</div>
+
+		<div class="btn zero">0</div>
+		<div class="btn dot">.</div>
+		<div class="btn bg-black ravno">=</div>
+
+	</div>
